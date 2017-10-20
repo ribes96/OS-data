@@ -1,0 +1,7 @@
+export PATH=$PATH:/home/hobber/bin
+
+function silent() {
+	"$@" 2>/dev/null &
+}
+
+export PS1='\e[33m\e[1m`pwd | rev | cut -d/ -f 1,2 | rev`:$ \e[0m'
